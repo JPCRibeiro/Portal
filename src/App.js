@@ -9,8 +9,8 @@ import Boletim from "./pages/boletim/Boletim";
 export default function App() {
   return (
     <Router>
-        <Routes basename="/Portal/login">
-          <Route path="/Portal/login" element={<Login/>}/>
+        <Routes basename="/Portal">
+          <Route path="/Portal" element={<Login/>}/>
           <Route path="/Portal/inicio" element={<Inicio/>}/>
           <Route path="/Portal/boletim" element={<Boletim/>}/>
           <Route path="/Portal/requerimento" element={<Requerimento/>}/>

@@ -19,7 +19,7 @@ export default function Header() {
           <img src={logo} alt="logo" width="40" />
           <span>Portal do Aluno</span>
         </div>
-        <Link title='Sair' to="/Portal/login">
+        <Link title='Sair' to="/Portal">
             <span>Sair</span>
             <LogoutIcon sx={{ fontSize: 30 }} />
         </Link>

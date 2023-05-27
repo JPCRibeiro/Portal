@@ -1,0 +1,60 @@
+{
+  "alunos": [
+    {
+      "nome": "Carlos",
+      "matricula": 5516867
+    },
+    {
+      "nome": "Marcos",
+      "matricula": 6300649
+    },
+    {
+      "nome": "Pedro",
+      "matricula": 1080783
+    },
+    {
+      "nome": "João",
+      "matricula": 8256605
+    },
+    {
+      "nome": "Felipe",
+      "matricula": 7265284
+    },
+    {
+      "nome": "Maria",
+      "matricula": 4476841
+    },
+    {
+      "nome": "Julia",
+      "matricula": 4104701
+    },
+    {
+      "nome": "Beatriz",
+      "matricula": 6504220
+    },
+    {
+      "nome": "Luis",
+      "matricula": 4949308
+    },
+    {
+      "nome": "Mario",
+      "matricula": 9933132
+    },
+    {
+      "nome": "Ronaldinho Gaúcho",
+      "matricula": 2203573
+    },
+    {
+      "nome": "Joel",
+      "matricula": 4781481
+    },
+    {
+      "nome": "Luccas",
+      "matricula": 5195837
+    },
+    {
+      "nome": "Nicolas",
+      "matricula": 3791326
+    }
+  ]
+}

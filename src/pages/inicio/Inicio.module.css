@@ -1,0 +1,149 @@
+.container {
+  min-height: 100svh;
+  display: grid;
+  grid-template-areas:
+    'sidenav header'
+    'sidenav main'
+    'sidenav footer';
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+}
+
+.main {
+  position: relative;
+  isolation: isolate;
+  background: rgb(217 217 217 / 61%);
+  background-color: #e5e5e5;
+  background-color: #dae7f3;
+  backdrop-filter: blur(5px);
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.7;
+  background-image: url(../../assets/pages-bg/inicio-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background {
+  background: rgb(217 217 217 / 61%);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+}
+
+.mainWrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mainWrapper h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.mainWrapper hr {
+  border: 0.5px solid var(--primary-color);
+}
+
+.mainWrapper h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin: 10px 0 20px;
+}
+
+.studentId {
+  display: flex;
+  gap: 20px;
+  color: var(--primary-color);
+  margin-top: 15px;
+}
+
+.studentId h1, .studentId h2 {
+  text-align: center;
+}
+
+.box {
+  margin: 0 0 30px;
+  box-shadow: 0px 3px 8px -1px #0000007a;
+  border-radius: 10px;
+}
+
+.boxTitle {
+  color: white;
+  background-color: var(--primary-color);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px 14px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.box div:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.boxMsg {
+  background-color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box span {
+  font-weight: 400;
+  color: #3f9dfb;
+}
+
+.box span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.gradeBox {
+  min-height: 250px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 8px -1px #0000007a;
+  border-radius: 10px;
+  color: #999999;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.gradeBox span {
+  font-weight: 600;
+  font-size: 30px;
+  user-select: none;
+}
+
+@media (max-width: 480px) {
+  .mainWrapper h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradeBox span {
+    font-size: 20px;
+  }
+}

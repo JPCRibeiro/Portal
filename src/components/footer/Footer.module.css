@@ -1,0 +1,38 @@
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: fit-content;
+}
+
+footer div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: min(90px, 3vw);
+  flex-wrap: wrap;
+  color: white;
+  margin-top: 14px;
+}
+
+footer li {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer li:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}

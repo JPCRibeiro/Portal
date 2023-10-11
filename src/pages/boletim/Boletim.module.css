@@ -1,0 +1,191 @@
+.container {
+  min-height: 100svh;
+  display: grid;
+  grid-template-areas:
+    'sidenav header'
+    'sidenav main'
+    'sidenav footer';
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+}
+
+.main {
+  position: relative;
+  isolation: isolate;
+  background: rgb(217 217 217 / 61%);
+  background-color: #e5e5e5;
+  background-color: #dae7f3;
+  backdrop-filter: blur(5px);
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.7;
+  background-image: url(../../assets/pages-bg/boletim-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background {
+  background: rgb(217 217 217 / 61%);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+}
+
+.mainWrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mainWrapper h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.mainWrapper hr {
+  border: 0.5px solid var(--primary-color);
+}
+
+.instruction {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px
+}
+
+.inputBox, .tableBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputBox label {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.inputBox input {
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 12px 0 12px;
+  padding: 10px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.inputBox button {
+  outline: none;
+  width: 100%;
+  background-color: var(--btn-color);
+  color: white;
+  min-width: 36px;
+  min-height: 40px;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  padding: 1px 16px 0;
+  border-radius: 9999px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: -2px 18px 36px -15px rgba(0, 0, 0, 0.75);
+}
+
+.inputBox button:hover {
+  background-color: #286090;
+  transition: 0.2s;
+}
+
+.inputBox button:active {
+  transform: scale(0.95);
+}
+
+.tableBox table {
+  flex: 1;
+  border-spacing: 0;
+}
+
+.tableBox td {
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid var(--border-color);
+  color: var(--secondary-color);
+  padding: 15px 15px;
+  text-align: center;
+  background-color: white;
+}
+
+.tableRightCol {
+  width: 38%;
+  max-width: 137px;
+}
+
+@media (max-width: 480px) {
+  .mainWrapper h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:not(:first-child):not(:last-child) td:first-child {
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:not(:first-child):not(:last-child) td:last-child {
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+}

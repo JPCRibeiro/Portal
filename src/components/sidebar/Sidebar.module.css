@@ -1,0 +1,62 @@
+aside {
+  z-index: 999;
+  position: relative;
+  grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #425364;
+  height: 100%;
+  box-shadow: 4px 0px 21px -7px rgb(0 0 0 / 64%);
+  transition: 0.1s ease;
+}
+
+aside svg {
+  cursor: pointer;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+aside ul a {
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+}
+
+aside ul a span {
+  cursor: pointer;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+}
+
+.top p {
+  font-size: 24px;
+}
+
+.top button {
+  display: flex;
+  background: transparent;
+  border: none;
+  color: white;
+}

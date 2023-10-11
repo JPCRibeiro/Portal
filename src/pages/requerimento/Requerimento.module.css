@@ -1,0 +1,263 @@
+.container {
+  min-height: 100svh;
+  display: grid;
+  grid-template-areas:
+    'sidenav header'
+    'sidenav main'
+    'sidenav footer';
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+}
+
+.main {
+  position: relative;
+  isolation: isolate;
+  background: rgb(217 217 217 / 61%);
+  background-color: #e5e5e5;
+  background-color: #dae7f3;
+  backdrop-filter: blur(5px);
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.7;
+  background-image: url(../../assets/pages-bg/requerimento-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background {
+  background: rgb(217 217 217 / 61%);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+}
+
+.mainWrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+}
+
+.mainWrapper h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.mainWrapper hr {
+  border: 0.5px solid var(--primary-color);
+}
+
+.col3 {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.inputBox {
+  width: 33.33%;
+}
+
+.mainWrapper label {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.error {
+  color: #f2545b;
+  /* padding-left: 10px; */
+  min-height: 21px;
+  display: flex;
+}
+
+.borderError {
+  border: 2px solid #c87872 !important;
+}
+
+.lol {
+  background-color: black;
+  height: 100vh;
+}
+
+input {
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 12px 0 0;
+  padding: 10px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+}
+
+select {
+  width: 100%;
+  width: 100%;
+  font-size: 18px;
+  margin: 12px 0 0;
+  padding: 10px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+}
+
+.inputBox:not(:last-child) {
+  margin-right: 20px;
+}
+
+.inputBox.col1 {
+  margin-bottom: 0px;
+}
+
+.col1 {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 20px;
+  margin: 12px 0 0;
+  padding: 7px 13px;
+  outline: none;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  font-weight: 400;
+  min-height: 200px;
+}
+
+textarea::placeholder {
+  color: #bfbfbf;
+  font-weight: 400;
+}
+
+textarea:focus, input:focus {
+  border: 2px solid #78a7d5;
+}
+
+@media (max-width: 480px) {
+  .mainWrapper h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+.fileUpload {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #286090;
+  border: 2px solid #286090;
+  border-radius: 10px;
+  border-style: solid;
+  font-size: 16px;
+  user-select: none;
+}
+
+.fileUpload:hover,
+.fileUpload:focus {
+  background-color: #254868;
+  border: 2px solid #254868;
+  transition: 0.2s;
+}
+
+.mainWrapper input[type='file'] {
+  display: none;
+}
+
+label[for='file'] {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  width: fit-content;
+}
+
+.required {
+  color: red;
+}
+
+.mainWrapper > button {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--btn-color);
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  border-style: solid;
+  user-select: none;
+  display: flex;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 30px;
+  align-items: center;
+  gap: 15px;
+  min-width: 169px;
+  justify-content: center;
+}
+
+.mainWrapper > button:hover {
+  background-color: #286090;
+  border: 2px solid #286090;
+  transition: 0.2s;
+}
+
+@media (max-width: 480px) {
+  .fileUpload {
+    width: min-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputBox {
+    width: 100%;
+  }
+  .inputBox.col1 {
+    margin-bottom: 10px;
+  }
+  .col3 {
+    flex-direction: column;
+  }
+}
+
+.loader {
+  animation: is-rotating 1s infinite;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #e5e5e5;
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.formSent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formSent h1 {
+  color: var(--btn-color);
+}
+
+.formSent h2 {
+  color: var(--secondary-color);
+}

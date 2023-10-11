@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portal/static/css/main.973aff53.css",
-    "main.js": "/Portal/static/js/main.74fe38ff.js",
+    "main.js": "/Portal/static/js/main.aedf42d1.js",
     "static/media/sociologia.jpg": "/Portal/static/media/sociologia.0b04abe6bff050ff7117.jpg",
     "static/media/login-bg.jpg": "/Portal/static/media/login-bg.21d526388456d0fe9c09.jpg",
     "static/media/filosofia.jpg": "/Portal/static/media/filosofia.8ee84f5acc1d486c01d8.jpg",
@@ -24,10 +24,10 @@
     "index.html": "/Portal/index.html",
     "static/media/user.svg": "/Portal/static/media/user.93669e38f16bbc0da4cd.svg",
     "main.973aff53.css.map": "/Portal/static/css/main.973aff53.css.map",
-    "main.74fe38ff.js.map": "/Portal/static/js/main.74fe38ff.js.map"
+    "main.aedf42d1.js.map": "/Portal/static/js/main.aedf42d1.js.map"
   },
   "entrypoints": [
     "static/css/main.973aff53.css",
-    "static/js/main.74fe38ff.js"
+    "static/js/main.aedf42d1.js"
   ]
 }

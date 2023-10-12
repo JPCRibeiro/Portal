@@ -8,7 +8,7 @@ export default function Footer() {
       <div>
         <img src={logo} alt="logo" width="40"/>
         <ul>
-          <Link to="/requerimento">
+          <Link to="/Portal/requerimento">
             <li>Requerimentos</li>
           </Link>
         </ul>

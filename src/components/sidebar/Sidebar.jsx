@@ -22,15 +22,15 @@ export default function Sidenav() {
           <button onClick={toggle}>{clicked ? <CloseIcon sx={{ fontSize: 30 }}/> : <MenuIcon sx={{ fontSize: 30 }}/>}</button>
         </div>
         <ul>
-          <Link title="Início" to='/inicio'>
+          <Link title="Início" to='/Portal/inicio'>
             <HomeIcon sx={{ fontSize: 30 }}/>
             <span style={{ display: clicked ? 'block' : 'none' }}>Página Inicial</span>
           </Link>
-          <Link title="Boletim" to='/boletim'>
+          <Link title="Boletim" to='/Portal/boletim'>
             <TextIncreaseIcon sx={{ fontSize: 30 }} />
             <span style={{ display: clicked ? 'block' : 'none' }}>Boletim</span>
           </Link>
-          <Link title="Biblioteca Virtual" to='/biblioteca'>
+          <Link title="Biblioteca Virtual" to='/Portal/biblioteca'>
             <BookIcon sx={{ fontSize: 30 }} />
             <span style={{ display: clicked ? 'block' : 'none' }}>Livro Virtual</span>
           </Link>

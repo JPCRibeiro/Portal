@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portal/static/css/main.3591c9fd.css",
+    "main.js": "/Portal/static/js/main.a6b718fd.js",
+    "static/media/sociologia.jpg": "/Portal/static/media/sociologia.0b04abe6bff050ff7117.jpg",
+    "static/media/login-bg.jpg": "/Portal/static/media/login-bg.21d526388456d0fe9c09.jpg",
+    "static/media/filosofia.jpg": "/Portal/static/media/filosofia.8ee84f5acc1d486c01d8.jpg",
+    "static/media/biblioteca-bg.jpg": "/Portal/static/media/biblioteca-bg.5ac14f93ab99d4fb3844.jpg",
+    "static/media/literatura.jpg": "/Portal/static/media/literatura.b7f5c42827fc3ea32bd3.jpg",
+    "static/media/requerimento-bg.jpg": "/Portal/static/media/requerimento-bg.9dda70194f4fe9200ff5.jpg",
+    "static/media/quimica.jpg": "/Portal/static/media/quimica.83a9ed7637f9736b030b.jpg",
+    "static/media/fisica.jpg": "/Portal/static/media/fisica.81b6986a93a353d3edd4.jpg",
+    "static/media/historia.jpg": "/Portal/static/media/historia.ace7b379a70572488234.jpg",
+    "static/media/biologia.jpg": "/Portal/static/media/biologia.b0dbb5289e9b8dcef8c5.jpg",
+    "static/media/geografia.jpg": "/Portal/static/media/geografia.d06a407ba4a18beb948a.jpg",
+    "static/media/portugues.jpg": "/Portal/static/media/portugues.b14c353584162f756078.jpg",
+    "static/media/boletim-bg.jpg": "/Portal/static/media/boletim-bg.4030e79a00ccec1c2fe6.jpg",
+    "static/media/inicio-bg.jpg": "/Portal/static/media/inicio-bg.38212e2f69935678d7f0.jpg",
+    "static/media/redacao.jpg": "/Portal/static/media/redacao.c4d88778ce8991ab9105.jpg",
+    "static/media/ingles.jpg": "/Portal/static/media/ingles.a6f5a1c24d3ede043de6.jpg",
+    "static/media/matematica.jpg": "/Portal/static/media/matematica.e9801732caee639dc211.jpg",
+    "static/media/password.svg": "/Portal/static/media/password.997660e557a83062f35c.svg",
+    "static/media/book-logo.svg": "/Portal/static/media/book-logo.ce565a3e2e3a5c149ccd4c861bbdfae0.svg",
+    "index.html": "/Portal/index.html",
+    "static/media/user.svg": "/Portal/static/media/user.93669e38f16bbc0da4cd.svg",
+    "main.3591c9fd.css.map": "/Portal/static/css/main.3591c9fd.css.map",
+    "main.a6b718fd.js.map": "/Portal/static/js/main.a6b718fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3591c9fd.css",
+    "static/js/main.a6b718fd.js"
+  ]
+}
